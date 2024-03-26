@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyBazaar - Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      width: 300px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4285F4;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #357AE8;
+    }
+    .login-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .login-link a {
+      color: #4285F4;
+      text-decoration: none;
+    }
+    .quote {
+      text-align: center;
+      color: #6c757d; /* Gray quote text */
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <p class="quote">"EasyBazaar - Shop Easy, Bazaar Better."</p>
+  <h2>Sign Up</h2>
+  <form method="post" action="submit.php">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required><br>
+
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" required><br>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address"><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob"><br>
+
+    <input type="button" value="Sign Up" onclick="redirectToLoginPage()">
+  </form>
+  <div class="login-link">
+    Already have an account? <a href="login.html">Log In</a>
+  </div>
+</div>
+
+<script>
+  function redirectToLoginPage() {
+    window.location.href = "login.html";
+  }
+</script>
+
+</body>
+</html>
